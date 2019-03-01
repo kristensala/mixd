@@ -1,0 +1,97 @@
+.header {
+    height: 80rem;
+    position: relative;
+
+    &__logo {
+        position: relative;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 45rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-width: 28rem;
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        
+        
+        
+
+         &--main {
+            color: $color-primary;
+            display: block;
+            
+            //opacity: 0;
+            
+            animation: fadeIn 1.5s;
+            animation-fill-mode: both;
+            animation-delay: .9s; 
+         }
+
+         @media only screen and (max-width: 450px) {
+            font-size: 1.6rem;
+            top: 40rem;
+        }
+    }
+}
+
+.logo-img {
+    position: absolute;
+    top: 35rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: 1200px) {
+        width: 45rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+        width: 25rem;
+    }
+}
+
+.arrow-container {
+    margin-top: 18rem;
+    display: inline-block;
+
+    @media only screen and (max-width: 500px) {
+        margin-top: 15rem;
+    }
+    
+
+    &:hover .arrow-logo {
+
+        transition: all .2s ease-in-out;
+
+        &--1 {
+            transform: translateY(-1.4rem);
+        }
+
+        &--3 {
+            transform: translateY(1.4rem);
+        }   
+    }
+}
+
+.arrow-logo {
+    transition: all .2s ease-out;
+    width: 4rem;
+    color: $color-white;
+    display: block;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: -2.7rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

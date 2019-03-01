@@ -1,0 +1,31 @@
+.footer {
+    padding: 10rem 0;
+    background-color: #1D001F;
+    text-align: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        width: 12rem;
+
+        margin-bottom: 1rem;
+    }
+
+    &__text-box {
+        color: $color-primary;
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+}
+
+.social-container {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+
+

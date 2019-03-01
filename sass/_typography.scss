@@ -1,0 +1,48 @@
+body {
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.heading-primary {
+    color: $color-white;
+    margin-bottom: 5rem;
+    
+    &--main {
+        font-family: $font-secondary;
+        font-weight: 300;
+        font-size: 6.4rem;
+        display: inline-block;
+
+        @media only screen and (max-width: 450px) {
+            font-size: 5rem;
+        }
+
+    }
+
+    
+}
+
+
+.heading-tertiary {
+    
+
+    &--main {
+        font-family: $font-secondary;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 2rem;
+        
+    }
+
+    &--sub {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        display: inline-block;
+        color: $color-grey-1;
+    }
+}
