@@ -1,8 +1,6 @@
 .feature-box-container {
     display: flex;
     justify-content: space-evenly;
-    // use that on responsive
-    //flex-direction: column;
 
     @media only screen and (max-width: 800px) {
         align-items: center;

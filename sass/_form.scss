@@ -1,8 +1,6 @@
 .form {
     display: inline-block;
 
-    
-
     &__container {
         display: flex;
         justify-content: center;
@@ -46,8 +44,6 @@
         @media only screen and (max-width: 400px) {
             width: 28rem;
         }
-
-
     }
 
     &__input {
@@ -61,8 +57,6 @@
         @media only screen and (max-width: 400px) {
             width: 25rem;
         }
-        
-
     }
 
     &__label {
@@ -70,23 +64,17 @@
         text-align: left;
         margin-left: 1.5rem;
         transition: all .3s;
-        color: $color-white;
-
-        
+        color: $color-white;     
     }
 
     &__input:placeholder-shown + &__label {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
-
     }
 
     &__submit {
         text-align: left;
-
-
-        
     }
 
     &__btn {

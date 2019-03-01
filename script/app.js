@@ -23,12 +23,11 @@ function closeNav() {
 
 
 var modal = document.getElementById('myModal');
-var span = document.getElementsByClassName("close")[0];
 
 function openModal() {
     document.getElementById('result').value = "";
     modal.style.display = "block";
-    randomEquation()
+    randomEquation();
 
 
 }
