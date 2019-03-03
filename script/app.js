@@ -1,3 +1,4 @@
+// Logo animation
 window.onload = function loadLogo() {
     for (var i = 1; i < 40; i++) {
         (function (i) {
@@ -7,8 +8,6 @@ window.onload = function loadLogo() {
                     var previousIdx = "logo-img--" + idx;
                     document.getElementsByClassName(previousIdx)[0].setAttribute("style", "opacity:0");
                 }
-
-
                 var currentIdx = "logo-img--" + i;
                 document.getElementsByClassName(currentIdx)[0].setAttribute("style", "opacity:1;");
             }, 40 * i);
@@ -16,24 +15,21 @@ window.onload = function loadLogo() {
     };
 }
 
+var result;
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
 
 function closeNav() {
     document.getElementById("navi-toggle").checked = false;
 }
 
-
-var modal = document.getElementById('myModal');
-
+// Modal functionality
 function openModal() {
     document.getElementById('result').value = "";
     modal.style.display = "block";
     document.getElementById('result').focus();
-    randomEquation();
-
-
+    randomEquation()
 }
-
-var result;
 
 function randomEquation() {
     var randomNum1 = Math.floor(Math.random() * 11);
@@ -54,5 +50,3 @@ function checkResult() {
         location.reload();
     }
 }
-
-
