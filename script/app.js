@@ -26,6 +26,7 @@ var modal = document.getElementById('myModal');
 
 function openModal() {
     document.getElementById('result').value = "";
+    document.getElementById('result').focus();
     modal.style.display = "block";
     randomEquation();
 
